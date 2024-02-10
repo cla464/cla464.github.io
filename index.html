@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	
+	   <title>Articulo Escolar</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="inde/@media.css">        
+         
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	
+	<style type="text/css">
+	*{
+	margin:0;
+	padding:0;
+	}
+                  body{
+                          background:#E6E6E6;
+                  }
+	
+	  table{background:white;
+   margin: 0 auto;
+   border-collapse: collapse;
+   }
+   
+   input{
+   background:white;
+   font-family:Arial, Helvetica, sans serif; 
+   font-weight:bold;
+   font-size:25px;
+   width:100%;
+   outline: none;
+   padding:5px 5px;
+   border:3px solid #585858;
+   border-radius: 5px;
+   transition:0.5s;
+   }
+   
+   input:focus {
+       border-radius: 5px;
+       border:3px solid #D8F781;
+       
+        padding:5px 5px;
+    }
+	
+	
+	table{
+	border-collapse: collapse;
+	margin: 0 auto;
+	
+	font-family:Arial, Helvetica, sans serif;
+	}
+	
+	
+	#franjaBuscador{
+	width:100%;
+                  
+	position:fixed;
+	background:#084B8A;
+	}
+	 #cajaDivimput{
+                        background:transparent; 
+                        margin-left:auto; 
+                        
+                        margin-right:auto;
+                        border:none; 
+                        max-width:500px; 
+                        margin-top:5px;
+                        margin-bottom:5px;
+                   }
+	
+                /*========================= tabla producto ===============================*/
+	
+	.TDclass{
+                       border:2px solid black;
+                       font-size:18px;padding:10px 10px;
+                       font-weight:900;
+                  }
+	.TDclassPrecio{color:#FF00BF;
+                       border:2px solid black;
+                       font-size:20px;
+                       padding:10px 10px;text-align:center;
+                       font-weight:900;
+                  }
+	
+	</style>
+	 <script type="text/javascript">
+    (function(document) {
+      'use strict';
+
+      var LightTableFilter = (function(Arr) {
+
+        var _input;
+
+        function _onInputEvent(e) {
+          _input = e.target;
+          var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+          Arr.forEach.call(tables, function(table) {
+            Arr.forEach.call(table.tBodies, function(tbody) {
+              Arr.forEach.call(tbody.rows, _filter);
+            });
+          });
+        }
+
+        function _filter(row) {
+          var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+          row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+        }
+
+        return {
+          init: function() {
+            var inputs = document.getElementsByClassName('light-table-filter');
+            Arr.forEach.call(inputs, function(input) {
+              input.oninput = _onInputEvent;
+            });
+          }
+        };
+      })(Array.prototype);
+
+      document.addEventListener('readystatechange', function() {
+        if (document.readyState === 'complete') {
+          LightTableFilter.init();
+        }
+      });
+
+    })(document);
+    
+   
+    
+    </script>
+</head>
+
+<body> 
+
+
+
+
+
+
+<div id="franjaBuscador">
+       
+            <div id="cajaDivimput">
+   
+                       <input id="popo" class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar...">
+
+            </div> 
+     
+</div> 
+     
+
+
+  
+        
+     
+        
+        
+      <div style="height:80px;"></div>  
+
+
+
+      <table class="table table-bordered order-table " >	
+
+ 
+ <tr><td>Acuarela Sifap X 12 Colores</td><td>1047</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>805</td><td>1,3</td></tr>
+ <tr><td>Acuarela Filgo Escolar X 8 Colores</td><td>852</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>655</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plasticola Vinilico X 25 G</td><td>390</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>300</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plasticola Vinilico X 40 G</td><td>605</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>465</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plasticola Vinilico X 90 G</td><td>997</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>767</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plasticola Vinilico X 40 G Fluo</td><td>897</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>690</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plasticola Glitter Brillos X 38g V/colores</td><td>809</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>622</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plasticola Vinilico X 40 G Pastel</td><td>897</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>690</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plastigoma Sintetico X 30 Cc</td><td>286</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>220</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Plasticola Vinilico X 40 G (Rojo, Azúl, Amarillo, Verde)</td><td>813</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>625</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Sta Silicona Liquida X 30g</td><td>702</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>540</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Sta Silicona Liquida X 100g</td><td>1647</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1267</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Sta Vinilico X 30 G</td><td>228</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>175</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Sta Vinilico X 50 G</td><td>410</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>315</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Sta Vinilico X 100 G</td><td>822</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>632</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Unipox X 25 Ml</td><td>1404</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1080</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Voligoma Sintético X 30 CC.</td><td>904</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>695</td><td>1,3</td></tr>
+ <tr><td>Adhesivo Voligoma Sintetico X 50 Cc</td><td>1469</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1130</td><td>1,3</td></tr>
+ <tr><td>Afiche Blanco </td><td>620</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>477</td><td>1,3</td></tr>
+ <tr><td>Afiche Color</td><td>666</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>512</td><td>1,3</td></tr>
+ <tr><td>Aro Metálico Sifap 35mm</td><td>150</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>115</td><td>1,3</td></tr>
+ <tr><td>Aro Metalico Sifap 40mm</td><td>169</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>130</td><td>1,3</td></tr>
+ <tr><td>Aro Metálico Sifap 50mm</td><td>187</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>144</td><td>1,3</td></tr>
+ <tr><td>Aro Sifap Metálico 60mm</td><td>283</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>218</td><td>1,3</td></tr>
+ <tr><td>Aro Sifap Metálico 70mm</td><td>403</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>310</td><td>1,3</td></tr>
+ <tr><td>Barra Silicona Fina</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Block De Dibujo Luma N°5 Blanco X 20h.</td><td>1776</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1366</td><td>1,3</td></tr>
+ <tr><td>Block De Dibujo Luma N°5 Color X 24h.</td><td>2704</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>2080</td><td>1,3</td></tr>
+ <tr><td>Block De Dibujo Gloria N°5 Blanco X 24h.</td><td>1700</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1360</td><td>1,25</td></tr>
+ <tr><td>Block De Dibujo Gloria N°5 Color X 24h. </td><td>2325</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1860</td><td>1,25</td></tr>
+ <tr><td>Block Ledesma Avon A4 Peg X80h. Liso</td><td>2340</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1800</td><td>1,3</td></tr>
+ <tr><td>Boligrafo Bic Fine Plus</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Bolígrafo Bic opaco</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Boligrafo Faber Trilux 035 V/colores</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Boligrafo Faber Trilux 032 Cristal Azul/negro/rojo/verde</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Boligrafo Paper Mate Kilometrico</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Borrador Para Pizarrón Turk Chico</td><td>803</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>618</td><td>1,3</td></tr>
+ <tr><td>Borrador Para Pizarron Turk Grande</td><td>988</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>760</td><td>1,3</td></tr>
+ <tr><td>Borrador Sifap Para Pizarra Blanca Goma Eva</td><td>1927</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1482</td><td>1,3</td></tr>
+ <tr><td>Borrador Sifap Para Pizarra Blanca (porta 2 marcadores)</td><td>2860</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>2200</td><td>1,3</td></tr>
+ <tr><td>Borrador Pizzini De Pizarra C/estuche Plastico (porta 3 marcadores)</td><td>3019</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>2322</td><td>1,3</td></tr>
+ <tr><td>Borrador Bic De Pizarra + 4 Marcadores</td><td>3640</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>2800</td><td>1,3</td></tr>
+ <tr><td>Brillantina Miniglass blister X 5u. Surtidas</td><td>1631</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1305</td><td>1,25</td></tr>
+ <tr><td>Brillantina Miniglass blister X 5u. Pastel</td><td>1631</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1305</td><td>1,25</td></tr>
+ <tr><td>Brillantina Miniglass blister X 5u. Dorado</td><td>816</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>652,5</td><td>1,25</td></tr>
+ <tr><td>Brillantina Miniglass blister X  1u.</td><td>176</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>130,5</td><td>1,35</td></tr>
+ <tr><td>Broche Mit 10 X 1000 Unid</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Broche Mit 50 X 1000 Unid.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Broche Mit 64 X 1000 Unid</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Block Gloss A6 C/espiral X80h. = Liso</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Carpeta Avios 3x40 Fibra Negra Escolar</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Carpeta Avios Nª3 Escolar 2 Tapas Pp c/cordón</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Carpeta Fibracap Fibra Color Nº3 C/cordón 2 tapas</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Carpeta Fibracap Fibra Negra Nº3 C/cordón 2 Tapas</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Carpeta Avios Oficio 3 Solapas Pp Pastel C/elastico</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Carpeta Lama/luma 30 Folios A4</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cartulina</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cartulina Entretenida (Bifaz)</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cartulina Luma Fluo (Rojo, verde y  naranja)</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Chinche Bronceada Sifap X 25u.</td><td>280</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>215</td><td>1,3</td></tr>
+ <tr><td>Chinche Bronceada Sifap X 50u.</td><td>358</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>275</td><td>1,3</td></tr>
+ <tr><td>Chinche Bronceada Sifap X100u</td><td>663</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>510</td><td>1,3</td></tr>
+ <tr><td>Cinta Adhesiva Stiko Nº10 Transparente</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta Adhesiva Stiko 12mmx60mts Transparente</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta Adhesiva Stiko 18mmx25mts Transparente</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta Adhesiva Stiko 12mmx30mts Transparente</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta De Embalar Stiko 24 mm x 50 mts Transparente</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta De Embalar Stiko 48 mm x 50 mts Transparente</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta De Papel Stiko 12mm x 50mts</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta De Papel Stiko 18mmx20mm Escolar</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td> Cinta De Papel Stiko 18mmx50mts   Cinta Stiko Fragil Blanco 48x50</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cinta Stiko Fragil Blanco 48x50</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Clips Plastico Liggotrade Corazon. Bolsa X 50u. Pastel </td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Compás Maped Kidz Mina</td><td>1326</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1020</td><td>1,3</td></tr>
+ <tr><td>Compás Pizzini Tubo (Pk133)</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Compas Maped Study Con Portaminas 0.5</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Constitución De La Nación Argentina Mawis</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Corrector Ezco Lapiz 7 Ml</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Corrector Faber Lápiz Punta Metálica 7 ml</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Crayones Faber Castell X 6  De Cera</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Crayones Faber Castell X12 De Cera</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuaderno Gloria T/flexible X24h.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuaderno Gloria T/flexible X48h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuaderno Ledesma 16x21 Avon X46h. =/# C/esp</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuaderno Ledesma 22x29 Avon 84h. =/# C/esp.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuaderno Ledesma 22x29 Essential X84h. =# (varios Colores)</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuaderno Plantec Caligrafía N°1 Nivel Inicial</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuaderno Plantec Caligrafía N2 Nivel Avanzado</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Cuadernillo 1028 Oficio X 5h = #</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Escuadra Madera para Pizarrón</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Escuadra Maped De 21 Cm. X 45 Grados</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Escuadra Maped De 21 Cm. X 60 Grados</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Etiquetas Ezco De Precios Blancas C/u</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Etiquetas Ezco De Precios Fluo C/u</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Folio Luma N°3 Escolar Liviano x 100 u</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma N°3 Escolar Liviano x 1 u</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Escolar Pesado X100u. Polietileno</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Escolar Pesado X1u. Polietileno</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td> Folio Luma A4 Extra Cristal/gofrado Pp X 100u. Equipo Comercial        l</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma A4 Extra Cristal/gofrado Pp X 1 u. Equipo Comercial</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma A4 Pesado X100u.</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma A4 Pesado X1 u.</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Oficio Extra Cristal/gofrado Pp X 100u. Equipo Comercial</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Oficio Extra Cristal/gofrado Pp X 100u. Equipo Comercial</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Oficio Liviano X100u. Polietileno</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Oficio Liviano X100u. Polietileno</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Oficio Pesado X100u. Polietileno</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Folio Luma Oficio Pesado X100u. Polietileno</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Goma De Borrar Dos Banderas 214 Tinta/lápiz Azul/roja</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Goma De Borrar Faber Castell Plástica Lápiz PVC-Free</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Goma De Borrar Blanca Maped Mini Techinic</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Goma De Borrar Dos Banderas 3060</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Goma De Borrar Maped Mini Techinic Duo</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Goma De Borrar Dos Banderas 211 Tinta/lápiz Blanca/gris</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Goma Eva 45x60 cm</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Goma Eva 40x60 cm Glitter</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Faber Castell Ecolapiz X6u.cortos</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Faber Castells X 12u. Largos</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Filgo X6u. Cortos</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Filgo X12u. Cortos Pinto</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Filgo X12u. Largos</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Filgo X24u. Largos</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Filgo X36u. Largos Pinto</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Giotto x 12u. Largo Stilnovo</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Color Maped Peps X 12 Largo</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Grafito Faber Castell Goldfaber 1221 Hb/2b/6b/3h/4h etc.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lapiz Grafito Ezco C/goma Fantasia</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Grafito Staedtler Noris Nº2 Hb</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Negro Grafito Bic Evolution Hb</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Negro Grafito Faber Castell Hexagonal 1205 Nº2 Hb Ecológico</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Grafito Maped H</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Lápiz Negro Grafito Faber Castell Triangular "Vaquitas"</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro Mi Libretita Cursiva Tripulante</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro Mi Libretita Imprenta Mayúscula Tripulante</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro Mi Libretita Tripulante Números Del 0 Al 100</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro para Colorear "Dino", con Stikers y Memotest</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro para Colorear "Unicornio", con Stikers y Memotest</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro para Colorear "Spiderman", con Stikers y Memotest</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro para Colorear "Princesas", con Stikers y Memotest</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro para Colorear "En el bosque de la selva", con Stikers y Memotest</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro para Colorear "La granja de Zenón" , con Stikers y Memotest</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro para Colorear "Qué quiero ser cuando sea grande" , con Stikers y Memotest</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro Para Pintar Mandalas Infantiles Editorial Betina</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Libro Para Pintar Mandalitas Infantiles Editorial Betina</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Mapa N° 3</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,5</td></tr>
+ <tr><td>Mapa N° 5</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,5</td></tr>
+ <tr><td>Mapa N° 6</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,5</td></tr>
+ <tr><td>Marcador Escolar Filgo Pinto V/colores X6u.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Marcador Escolar Filgo Pinto V/colores X10u.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Marcador Escolar Maped Ocean X6u</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Marcador Escolar Maped Ocean X 10u</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Marcador Trabi 411 Permanente Punta Redonda</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Marcador Trabi 450 Pizarra</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Marcador Trabi P/cd Punta Fina</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Marcador Trabi P/cd Punta Mediana</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Mezclador Sifap P/tempera Paleta X 10 Cavidades</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Ojalillos Plancha</td><td>40,00</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,5</td></tr>
+ <tr><td>Palito Brochette Ezco 25cm X50u.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Palito Brochette Ezco 25cm X90u.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Palito Ezco Helado Natural X50u</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Palito Ezco Helado Color X50u.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Crepé</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Luma Glase Fluo X 5h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Luma Glase Metalizado X 10u. 10 x 10 cm.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Luma Glase Lustre X10u. 10 X 10 cm</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Luma Glase Lustre X 100 hjs. 10 x 10 cm Colores surtidos</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Rexon Fotografico A4 150gr X20h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Rexon Fotografico A4 150gr X 1 U</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Fotografico A4 Autoadhesivo 135gr X20h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Papel Fotografico A4 Autoadhesivo 135gr X 1 U</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Plancha Orion/self/liggo P/plastificar En Frio X 1 h.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Plastilina Playcolor x 1 un.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Plastilina Playcolor X 6u.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Plastilina Playcolor X6 Pastel</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Plastipinturitas Jovi X 12u.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Porta Lápiz Acrílico Acrimet</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Regla Dozent Tec. De 16 Cm Verde Transp</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Dozent Tec. De 20 Cm Verde Transp</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Dozent Tec. De 30 Cm Verde Transp</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Dozent Tec. De 40 Cm Verde Transp</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Madera 1 Metro</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Maped X20 Cm Kidy Grip</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Maped X 15  Cm Eco</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Maped X 20  Cm Eco</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Maped X 30 Cm Eco</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Pizzini 1712 Escolar X 15 Cm</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Regla Benabi Flexible 20 Cm </td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto Maped Cutter 9 Mm X 10</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto Maped Cutter 9 Mm X 1</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto Maped Cutter 18mm X10</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto Maped Cutter 18mm X 1 U. </td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 Nº3 Blanco X 8h.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 N°3 Color X 6h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 N°3 Negro X 5h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 Nº5 Blanco X 8h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 N°5 Color X 6h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 N°5 Negro X 5h.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 Nº6 Blanco X 8h.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 N°6 Color X 6h.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Repuesto De Dibujo 1028 N°6 Negro X 5h.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td> Block De Dibujo Gloria N°5 Blanco X 24h.</td><td>1700</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1360</td><td>1,25</td></tr>
+ <tr><td>Block De Dibujo Gloria N°5 Color X 24h</td><td>2325</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1860</td><td>1,25</td></tr>
+ <tr><td>Rep. Exito x 24 Hjs. </td><td>963</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>770</td><td>1,25</td></tr>
+ <tr><td>Rep. Exito x 48 Hjs. </td><td>1.700</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1360</td><td>1,25</td></tr>
+ <tr><td>Rep. Exito x 96 Hjs.</td><td>4.038</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>3230</td><td>1,25</td></tr>
+ <tr><td>Rep. Exito x 288 Hjs. </td><td>9.060</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>7550</td><td>1,2</td></tr>
+ <tr><td>Rep. Exito x 480 Hjs. </td><td>14.778</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>12315</td><td>1,2</td></tr>
+ <tr><td>Repuesto Gloria X48 H. =</td><td>775</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>620</td><td>1,25</td></tr>
+ <tr><td>Repuesto Gloria A4 X96 H. =</td><td>2.338</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1870</td><td>1,25</td></tr>
+ <tr><td>Repuesto Gloria X400 H. #</td><td>5.719</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>4575</td><td>1,25</td></tr>
+ <tr><td>Repuesto Gloria X480 H. =</td><td>7.231</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>5785</td><td>1,25</td></tr>
+ <tr><td>Repuesto De Calcar Luma N°3 X 8h. Profesional</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Repuesto De Calcar Luma N° 5 X 8h. Profesional</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Repuesto De Dibujo Luma N°3 Pastel 6h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Repuesto De Dibujo Luma N°5 Pastel 6h</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Repuesto Trabi Roller Tinta Gel Borrable</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Resaltador Filgo Lighter Fine C/clip (sw-slf)</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Resaltador Filgo Text Mark Fluo V/colores (TXM-C1)</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Resma Ledesma Autor 75 Grs A4</td><td>6.015</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>4930</td><td>1,22</td></tr>
+ <tr><td>Resma Ledesma Autor 80 Grs A4</td><td>6.344</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>5200</td><td>1,22</td></tr>
+ <tr><td>Resma Ledesma Autor 75 Grs Oficio</td><td>7.399</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>6065</td><td>1,22</td></tr>
+ <tr><td>Roller Borrable Genios 2G Azul</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>&nbsp;</td><td>S</td><td>Pedidos-Consultas:       11 3024 3142</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Sacapuntas Metal Maped Satelite 1 Filo</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Sacapuntas Plástico Maped Boogy S/depósito</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Set Geometría Maped Blister X 3 Piezas</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Set Geometria Maped 3 Piezas Para Zurdo</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Set Geometria Pizzini Escolar 3 Piezas Pastel</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Sobre Comercial 1500 11.4x16.2 cm</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,5</td></tr>
+ <tr><td>Sobre Oficio Ingles 1300 63 Gr 12x23.5</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,5</td></tr>
+ <tr><td> Tempera Playcolor Pomo X 10u. 8 Cc</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tempera Pomo Playcolor 8 Cc V/colores x 1 un.</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tijera Ezco Escolar Kids</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tijera Ezco Escolar Pekes 12 Cm </td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tijera Ezco Eterna 17cm</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tijera Maped 13 Cm Essentials/pulse</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tijera Maped Office 17 cm. Essentials</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tijera Maped Office 21 cm Advanced Green</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tijera Maped Office 21 cm Essentials</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1,3</td></tr>
+ <tr><td>Tinta Trabi P/marcador Permanente X30cm.</td><td>1997</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1536</td><td>1,3</td></tr>
+ <tr><td>Tinta Trabi P/marcador Pizarra X30cm</td><td>4836</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>3720</td><td>1,3</td></tr>
+ <tr><td>Tiza Giotto Robercolor Blanca X 10</td><td>767</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>590</td><td>1,3</td></tr>
+ <tr><td>Tiza Giotto Robercolor Color X 10 un.</td><td>1157</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>890</td><td>1,3</td></tr>
+ <tr><td>Tiza Giotto Robercolor Blanca X 100</td><td>3422</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>2632</td><td>1,3</td></tr>
+ <tr><td>Tiza Giotto Robercolor Color X 100</td><td>8067</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>6205</td><td>1,3</td></tr>
+ <tr><td>Tiza Playcolor Blanca X12u</td><td>592</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>455</td><td>1,3</td></tr>
+ <tr><td>Tiza Playcolor Color X12u</td><td>978</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>752</td><td>1,3</td></tr>
+ <tr><td>Tiza Playcolor Blanca X144 U</td><td>2821</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>2170</td><td>1,3</td></tr>
+ <tr><td>Tiza Playcolor Color X 144 U</td><td>4557</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>3505</td><td>1,3</td></tr>
+ <tr><td>Talonario  1-100</td><td>549</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>422</td><td>1,3</td></tr>
+ <tr><td>Talonario  1-200</td><td>1108</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>852</td><td>1,3</td></tr>
+ <tr><td>Talonario 1028/taloffice   Recibo Mignon 30h</td><td>618</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>475</td><td>1,3</td></tr>
+
+</tbody></table>
+
+
+
+
+
+</html>
