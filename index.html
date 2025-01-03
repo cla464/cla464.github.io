@@ -1,0 +1,375 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	
+	
+	   <title>Articulo Escolar</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="inde/@media.css">        
+         
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	
+
+<style type="text/css">
+
+*{
+      margin:0;
+      padding:0;
+}
+  
+body{
+      background:#E6E6E6;
+}
+	
+table{
+       background:white; 
+       margin: 0 auto;
+       border-collapse: collapse;
+}
+   
+
+input{
+      background:white;
+      font-family:Arial, Helvetica, sans serif; 
+      font-weight:bold;
+      font-size:25px;
+      width:100%;
+      outline: none;
+      padding:5px 5px;
+      border:3px solid #585858;
+      border-radius: 5px;
+      transition:0.5s;
+}
+   
+   input:focus {
+       border-radius: 5px;
+       border:3px solid #D8F781;
+       
+        padding:5px 5px;
+    }
+	
+	
+	table{
+	border-collapse: collapse;
+	margin: 0 auto;
+	
+	font-family:Arial, Helvetica, sans serif;
+	}
+	
+	
+	#franjaBuscador{
+	width:100%;
+                  
+	position:fixed;
+	background:#084B8A;
+	}
+	 #cajaDivimput{
+                        background:transparent; 
+                        margin-left:auto; 
+                        
+                        margin-right:auto;
+                        border:none; 
+                        max-width:500px; 
+                        margin-top:5px;
+                        margin-bottom:5px;
+                   }
+	
+                /*========================= tabla producto ===============================*/
+	
+	
+	tr{
+                          border:2px solid black;
+                 }  
+                 .titulo{
+                      
+                        font-size:20px;
+                        font-family:Arial, Helvetica, sans serif; padding:6px 6px;
+                        font-weight: 900;
+                        color: white;
+                        text-align:center;
+                        background-color:#7a0099;
+                 }   
+                 .tituloprecio{
+                      
+                        font-size:20px;
+                        font-family:Arial, Helvetica, sans serif; 
+                        font-weight: 900;
+                        color: white;
+                        text-align:center;
+                        background-color:#7a0099;
+                 }
+                 .producto{
+                               font-size:20px;
+                               
+                               padding:4px 4px;
+                               font-weight: 900;
+                               font-family:Arial, Helvetica, sans serif; 
+                               text-align:right; 
+                 }
+                 .precio{
+                        border-left:2px dotted black;font-size:20px;
+                         font-family:Arial, Helvetica, sans serif; 
+                        font-weight: 900;
+                        color: #7a0099;
+                        text-align:center;
+                 }
+</style>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    (function(document) {
+      'use strict';
+
+      var LightTableFilter = (function(Arr) {
+
+        var _input;
+
+        function _onInputEvent(e) {
+          _input = e.target;
+          var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+          Arr.forEach.call(tables, function(table) {
+            Arr.forEach.call(table.tBodies, function(tbody) {
+              Arr.forEach.call(tbody.rows, _filter);
+            });
+          });
+        }
+
+        function _filter(row) {
+          var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+          row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+        }
+
+        return {
+          init: function() {
+            var inputs = document.getElementsByClassName('light-table-filter');
+            Arr.forEach.call(inputs, function(input) {
+              input.oninput = _onInputEvent;
+            });
+          }
+        };
+      })(Array.prototype);
+
+      document.addEventListener('readystatechange', function() {
+        if (document.readyState === 'complete') {
+          LightTableFilter.init();
+        }
+      });
+
+    })(document);
+    
+   
+    
+    </script>
+</head>
+
+<body> 
+
+
+
+
+
+
+
+
+<div id="franjaBuscador">
+       
+            <div id="cajaDivimput">
+   
+                       <input id="popo" class="form-control col-md-3 light-table-filter" data-table="order-table" type="text" placeholder="Buscar...">
+
+            </div> 
+     
+</div> 
+     
+
+
+  
+        
+     
+        
+        
+<div style="height:80px;"></div>  
+
+
+
+
+
+
+
+
+<table class="table table-bordered order-table " >	
+
+<tr><td class="titulo">Listado Productos    03-01-2025</td><td class="tituloprecio">Precio</td></tr>
+
+ <tr><td class="producto">Abrochadora Maped Vivo Nro 10</td><td class="precio">3400</td></tr>
+
+ <tr><td class="producto">Abrochadora Maped Greenlogic Mini (Pocket) 15hjs</td><td class="precio">4600</td></tr>
+ <tr><td class="producto">Abrochadora Maped Essentials Mini Metal N°10  15hjs</td><td class="precio">3890</td></tr>
+ <tr><td class="producto">Adhesivo Plasticola Vinilico X 25 G</td><td class="precio">490</td></tr>
+ <tr><td class="producto">Adhesivo Plasticola Vinilico X 40 G</td><td class="precio">650</td></tr>
+ <tr><td class="producto">Adhesivo Plastigoma Sintetico X 30 Cc</td><td class="precio">900</td></tr>
+ <tr><td class="producto">Adhesivo Sta Silicona Liquida X 100g</td><td class="precio">1500</td></tr>
+ <tr><td class="producto">Adhesivo Sta Silicona Liquida X 30g</td><td class="precio">620</td></tr>
+ <tr><td class="producto">Adhesivo Sta Vinilico X 30 G</td><td class="precio">230</td></tr>
+ <tr><td class="producto">Adhesivo Sta Vinilico X 50 G</td><td class="precio">420</td></tr>
+ <tr><td class="producto">Adhesivo Sta Vinilico X 100 G</td><td class="precio">750</td></tr>
+ <tr><td class="producto">Adhesivo Voligoma Sintetico X 30 Cc</td><td class="precio">1285</td></tr>
+ <tr><td class="producto">Adhesivo Voligoma Sintetico X 50 Cc</td><td class="precio">2085</td></tr>
+ <tr><td class="producto">Alfiler Sifap Cabeza Plastica Disco</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Aro Metalico Sifap 35mm</td><td class="precio">160</td></tr>
+ <tr><td class="producto">Aro Metalico Sifap 40mm</td><td class="precio">170</td></tr>
+ <tr><td class="producto">Aro Metalico Sifap 50mm</td><td class="precio">190</td></tr>
+ <tr><td class="producto">Aro Sifap Metalico 60mm</td><td class="precio">270</td></tr>
+ <tr><td class="producto">Aro Sifap Metalico 70mm</td><td class="precio">400</td></tr>
+ <tr><td class="producto">Barra Adhesiva Silicona Fina</td><td class="precio">220</td></tr>
+ <tr><td class="producto">Block De Dibujo Gloria N°5 Blanco X 24h.</td><td class="precio">2400</td></tr>
+ <tr><td class="producto">Block De Dibujo Gloria N°5 Color X 24h.</td><td class="precio">3260</td></tr>
+ <tr><td class="producto">Boligrafo Bic Fine Plus</td><td class="precio">690</td></tr>
+ <tr><td class="producto">Bolígrafo Bic opaco</td><td class="precio">600</td></tr>
+ <tr><td class="producto">Boligrafo Faber Trilux</td><td class="precio">440</td></tr>
+ <tr><td class="producto">Boligrafo Paper Mate Kilometrico</td><td class="precio">360</td></tr>
+ <tr><td class="producto">Bolsa de papel</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Brillantina Miniglass X 1 u</td><td class="precio">220</td></tr>
+ <tr><td class="producto">Brillantina Miniglass X 5 u</td><td class="precio">890</td></tr>
+ <tr><td class="producto">Cartulina</td><td class="precio">480</td></tr>
+ <tr><td class="producto">Cartulina estampada</td><td class="precio">590</td></tr>
+ <tr><td class="producto">Cartulina Luma Fluo</td><td class="precio">680</td></tr>
+ <tr><td class="producto">Cartulina Luma Metalizada</td><td class="precio">1100</td></tr>
+ <tr><td class="producto">Chinche Bronceada Sifap X 50u.</td><td class="precio">350</td></tr>
+ <tr><td class="producto">Chinche Bronceada Sifap X100u.</td><td class="precio">640</td></tr>
+ <tr><td class="producto">Cinta Adhesiva Stiko 12mmx30mts</td><td class="precio">500</td></tr>
+ <tr><td class="producto">Cinta Adhesiva Stiko 12mmx60mts</td><td class="precio">950</td></tr>
+ <tr><td class="producto">Cinta Adhesiva Stiko 18mmx25mts</td><td class="precio">660</td></tr>
+ <tr><td class="producto">Cinta Adhesiva Stiko Nº10</td><td class="precio">320</td></tr>
+ <tr><td class="producto">Cinta De Embalar Stiko 24mmx50mts</td><td class="precio">900</td></tr>
+ <tr><td class="producto">Cinta De Embalar Stiko 48mmx50mts Transparente/marron</td><td class="precio">1750</td></tr>
+ <tr><td class="producto">Cinta De Papel Stiko 12mmx50mts</td><td class="precio">1380</td></tr>
+ <tr><td class="producto">Cinta De Papel Stiko 18mmx20mm Escolar</td><td class="precio">900</td></tr>
+ <tr><td class="producto">Cinta De Papel Stiko 18mmx50mts</td><td class="precio">2100</td></tr>
+ <tr><td class="producto">Cinta De Papel Stiko 24mmx50mts</td><td class="precio">2710</td></tr>
+ <tr><td class="producto">Cinta Stiko Fragil Blanco 48x50 mts</td><td class="precio">2600</td></tr>
+ <tr><td class="producto">Corrector Ezco Lapiz 7 Ml</td><td class="precio">370</td></tr>
+ <tr><td class="producto">Corrector Faber Lápiz Punta Metálica 7 ml</td><td class="precio">990</td></tr>
+ <tr><td class="producto">Cuaderno Gloria Forrado X42h.</td><td class="precio">2520</td></tr>
+ <tr><td class="producto">Cuaderno Gloria Forrado X84h.</td><td class="precio">3540</td></tr>
+ <tr><td class="producto">Cuaderno Gloria T/flexible X24h.</td><td class="precio">760</td></tr>
+ <tr><td class="producto">Cuaderno Gloria T/flexible X48h.</td><td class="precio">1100</td></tr>
+ <tr><td class="producto">Cuaderno Ledesma 16x21 Avon 84h.</td><td class="precio">3150</td></tr>
+ <tr><td class="producto">Cuaderno Ledesma 16x21 Avon X46h.</td><td class="precio">1730</td></tr>
+ <tr><td class="producto">Cuaderno Ledesma 22x29 Avon</td><td class="precio">3340</td></tr>
+ <tr><td class="producto">Cutter</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Etiquetas Ezco De Precios Blancas C/u</td><td class="precio">560</td></tr>
+ <tr><td class="producto">Etiquetas Ezco De Precios Fluo C/u</td><td class="precio">660</td></tr>
+ <tr><td class="producto">Folio Luma A4 Liviano</td><td class="precio">110</td></tr>
+ <tr><td class="producto">Folio Luma Escolar Liviano N°3</td><td class="precio">70</td></tr>
+ <tr><td class="producto">Goma De Borrar Blanca Maped Mini Techinic</td><td class="precio">270</td></tr>
+ <tr><td class="producto">Goma De Borrar Dos Banderas 3060 Lapiz</td><td class="precio">220</td></tr>
+ <tr><td class="producto">Goma De Borrar Ezco Deportes</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Goma De Borrar Ezco Neon Tubo</td><td class="precio">260</td></tr>
+ <tr><td class="producto">Goma De Borrar Faber Castell Plástica Lápiz PVC-Free</td><td class="precio">660</td></tr>
+ <tr><td class="producto">Goma De Borrar Maped Mini Techinic Duo</td><td class="precio">390</td></tr>
+ <tr><td class="producto">Goma Eva 40x60 cm Glitter</td><td class="precio">930</td></tr>
+ <tr><td class="producto">Goma Eva 45x60 cm</td><td class="precio">470</td></tr>
+ <tr><td class="producto">Lapiz Color Faber Castell  X12u. Largos</td><td class="precio">3650</td></tr>
+ <tr><td class="producto">Lapiz Color Filgo X12u. Largos</td><td class="precio">1060</td></tr>
+ <tr><td class="producto">Lapiz Color Maped Peps X12u. Largos</td><td class="precio">1850</td></tr>
+ <tr><td class="producto">Lapiz De Color Filgo X6u. Cortos</td><td class="precio">490</td></tr>
+ <tr><td class="producto">Lapiz Filgo De Colores X 12 Cortos</td><td class="precio">890</td></tr>
+ <tr><td class="producto">Lapiz Grafito Ezco C/goma Fantasia</td><td class="precio">620</td></tr>
+ <tr><td class="producto">Lapiz Grafito Faber Castell 1205 Nº2 Hb Ecologico</td><td class="precio">330</td></tr>
+ <tr><td class="producto">Lapiz Grafito Pinto Filgo Hb</td><td class="precio">110</td></tr>
+ <tr><td class="producto">Lapiz Negro Grafito Bic Evolution Hb</td><td class="precio">290</td></tr>
+ <tr><td class="producto">Libros para colorear</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Mapa N° 3</td><td class="precio">100</td></tr>
+ <tr><td class="producto">Mapa N° 5</td><td class="precio">180</td></tr>
+ <tr><td class="producto">Mapa N° 6</td><td class="precio">650</td></tr>
+ <tr><td class="producto">Marcador Escolar Filgo Pinto V/colores X10u.</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Marcador Escolar Filgo Pinto V/colores X6u.</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Marcador Escolar Maped Color Peps Ocean X10u</td><td class="precio">2660</td></tr>
+ <tr><td class="producto">Marcador Escolar Maped Ocean X6u.</td><td class="precio">1440</td></tr>
+ <tr><td class="producto">&nbsp;</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Marcador Trabi 411 Permanente Punta Redonda</td><td class="precio">600</td></tr>
+ <tr><td class="producto">Marcador Trabi 450 Pizarra</td><td class="precio">810</td></tr>
+ <tr><td class="producto">Marcador Trabi P/cd Punta Fina</td><td class="precio">540</td></tr>
+ <tr><td class="producto">Marcador Trabi P/cd Punta Mediana</td><td class="precio">530</td></tr>
+ <tr><td class="producto">Mi Libretita Imprenta Mayuscula Tripulante</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Palito Brochette Ezco 25cm X50u</td><td class="precio">770</td></tr>
+ <tr><td class="producto">Palito Brochette Ezco 25cm X90u</td><td class="precio">1060</td></tr>
+ <tr><td class="producto">Palito Ezco Helado Color X50u</td><td class="precio">890</td></tr>
+ <tr><td class="producto">Palito Ezco Helado Natural X50u.</td><td class="precio">750</td></tr>
+ <tr><td class="producto">Papel Afiche</td><td class="precio">795</td></tr>
+ <tr><td class="producto">Papel Crepe</td><td class="precio">420</td></tr>
+ <tr><td class="producto">Papel Luma Glase Fluo X 5h</td><td class="precio">190</td></tr>
+ <tr><td class="producto">Papel Luma Glase Lustre X10u.</td><td class="precio">160</td></tr>
+ <tr><td class="producto">Papel Luma Glase Metalizado X 10u.</td><td class="precio">250</td></tr>
+ <tr><td class="producto">Papel Madera</td><td class="precio">320</td></tr>
+ <tr><td class="producto">Plastilina Playcolor X 1 u.</td><td class="precio">150</td></tr>
+ <tr><td class="producto">Plastilina Playcolor X 6u.</td><td class="precio">1020</td></tr>
+ <tr><td class="producto">Plastilina Playcolor X6 Pastel</td><td class="precio">960</td></tr>
+ <tr><td class="producto">Regla felxible Benabi 20 cm</td><td class="precio">200</td></tr>
+ <tr><td class="producto">Regla Maped X15 Cm Eco</td><td class="precio">270</td></tr>
+ <tr><td class="producto">Regla Maped X20 Cm Eco</td><td class="precio">310</td></tr>
+ <tr><td class="producto">Regla Maped X30 Cm Eco</td><td class="precio">470</td></tr>
+ <tr><td class="producto">Repuesto De Dibujo 1028 N°3 Color X 6h</td><td class="precio">710</td></tr>
+ <tr><td class="producto">Repuesto De Dibujo 1028 N°5 Color X 6h</td><td class="precio">1100</td></tr>
+ <tr><td class="producto">Repuesto De Dibujo 1028 N°6 Color X 6h</td><td class="precio">1910</td></tr>
+ <tr><td class="producto">Repuesto De Dibujo 1028 Nº3 Blanco X 8h.</td><td class="precio">570</td></tr>
+ <tr><td class="producto">Repuesto De Dibujo 1028 Nº5 Blanco X 8h</td><td class="precio">830</td></tr>
+ <tr><td class="producto">Repuesto De Dibujo 1028 Nº6 Blanco X 8h.</td><td class="precio">1600</td></tr>
+ <tr><td class="producto">Repuesto Exito Ecologico X 24 H.</td><td class="precio">1490</td></tr>
+ <tr><td class="producto">Repuesto Exito Ecologico X 48 H.</td><td class="precio">2700</td></tr>
+ <tr><td class="producto">Repuesto Exito Ecologico X 96 H.</td><td class="precio">5100</td></tr>
+ <tr><td class="producto">Repuesto Exito Ecologico X 288 H.</td><td class="precio">15980</td></tr>
+ <tr><td class="producto">Repuesto Exito Ecologico X 480 H.</td><td class="precio">24500</td></tr>
+ <tr><td class="producto">Repuesto Gloria X48 H</td><td class="precio">1220</td></tr>
+ <tr><td class="producto">Repuesto Gloria X96 H</td><td class="precio">2325</td></tr>
+ <tr><td class="producto">Resaltador Filgo Lighter Fine C/clip</td><td class="precio">310</td></tr>
+ <tr><td class="producto">Resaltador Filgo Text Mark Fluo V/colores</td><td class="precio">520</td></tr>
+ <tr><td class="producto">Roller Borrable Genios 2G</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Roller Genio Simball Borrable 2g</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Sacapuntas Plastico Maped Boogy</td><td class="precio">150</td></tr>
+ <tr><td class="producto">Sellitos</td><td class="precio">500</td></tr>
+ <tr><td class="producto">Set Geometria Maped 3 Piezas Para Zurdos</td><td class="precio">3500</td></tr>
+ <tr><td class="producto">Set Geometria Maped Blister X 3 Piezas Eco</td><td class="precio">1200</td></tr>
+ <tr><td class="producto">Set Geometria Pizzini Escolar 3 Piezas Pastel</td><td class="precio">&nbsp;</td></tr>
+ <tr><td class="producto">Sobre Color chico</td><td class="precio">100</td></tr>
+ <tr><td class="producto">Sobre Color grande</td><td class="precio">150</td></tr>
+ <tr><td class="producto">Sobre Color mediano</td><td class="precio">130</td></tr>
+ <tr><td class="producto">Sobre Comercial 1500 11.4x16.2</td><td class="precio">70</td></tr>
+ <tr><td class="producto">Sobre Oficio Ingles 12x23.5</td><td class="precio">100</td></tr>
+ <tr><td class="producto">Tijera Ezco Escolar Pekes 12 Cm</td><td class="precio">690</td></tr>
+ <tr><td class="producto">Tijera Maped 13 Cm Essentials/pulse C/u</td><td class="precio">1200</td></tr>
+ <tr><td class="producto">Tijera Maped 13 Cm Essentials/pulse Stainless Steel</td><td class="precio">1100</td></tr>
+
+
+
+
+<tr><td class="titulo">Fotocopias - Impresiones</td><td class="tituloprecio"> </td></tr>
+
+ <tr><td class="producto">Fotocopias</td><td class="precio">$180,00</td></tr>
+  <tr><td class="producto">Impresión Blanco y Negro</td><td class="precio">$200,00</td></tr>
+  <tr><td class="producto">Impresión Blanco y Negro con Imágenes</td><td class="precio">$250,00</td></tr>
+  <tr><td class="producto">Impresión a Color</td><td class="precio">Desde $250</td></tr>
+
+
+
+
+
+
+
+</tbody></table>
+
+
+
+
+
+</html>
